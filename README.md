@@ -9,7 +9,8 @@ conda create -n rep python=3.8
 conda install pytorch==2.4.1 pytorch-cuda=12.1 -c pytorch -c nvidia
 conda install nvidia/label/cuda-12.1.0::cuda-nvcc
 pip install torch_geometric torch_scatter torch_sparse torch_cluster -f https://data.pyg.org/whl/torch-2.4.0+cu121.html
-pip install lightning rdkit 
+pip install lightning rdkit
+conda install -c conda-forge openbabel
 ```
 
 ## Pretraining
