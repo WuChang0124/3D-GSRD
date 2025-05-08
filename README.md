@@ -20,17 +20,17 @@ bash run_pretrain.sh
 
 ## Finetuning for QM9
 
-Let the arguements `checkpoint_path` be the actual pretrained model path. In this script, the subtask is set to `homo`, but it can be replaced with other subtasks such as `dipole_moment`, `isotropic_polarizability`, `lumo`, `gap`, `electronic_spatial_extent`, `zpve`, `energy_U0`, `energy_U`, `enthalpy_H`, `free_energy`, `heat_capacity`. Run the following script:
+The `checkpoint_path` argument should be set to the path of the actual pretrained model checkpoint. In this script, the subtask is set to `homo`, but it can be replaced with other subtasks such as `dipole_moment`, `isotropic_polarizability`, `lumo`, `gap`, `electronic_spatial_extent`, `zpve`, `energy_U0`, `energy_U`, `enthalpy_H`, `free_energy`, `heat_capacity`. Run the following script:
 
 ```bash
 bash ft_qm9.sh
 ```
 
-Please note that if the `dataset_arg` is set to `energy_U0`、`energy_U`、`enthalpy_H` and `free_energy`, add `--prior_model` in the scripts.
+Please note that if the `dataset_arg` is set to `energy_U0`、`energy_U`、`enthalpy_H` and `free_energy`, add `--prior_model` in the script.
 
 ## Finetuning for MD17
 
-Let the arguements `checkpoint_path` be the actual pretrained model path. In this script, the subtask is set to `md17_aspirin`, but it can be replaced with other subtasks such as `md17_benzene2017`, `md17_ethanol`, `md17_malonaldehyde`, `md17_naphthalene`, `md17_salicylic`, `md17_toluene`, `md17_uracil`. Run the following script:
+The `checkpoint_path` argument should be set to the path of the actual pretrained model checkpoint. In this script, the subtask is set to `md17_aspirin`, but it can be replaced with other subtasks such as `md17_benzene2017`, `md17_ethanol`, `md17_malonaldehyde`, `md17_naphthalene`, `md17_salicylic`, `md17_toluene`, `md17_uracil`. Run the following script:
 
 ```bash
 bash ft_md17.sh
