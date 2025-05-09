@@ -1,0 +1,7 @@
+*.sh
+*.out
+data/*
+all_checkpoints/*
+__pycache__/
+log/*
+log*

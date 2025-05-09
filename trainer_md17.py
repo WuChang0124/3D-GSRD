@@ -311,6 +311,7 @@ if __name__ == '__main__':
     parser.add_argument('--trans_version', type=str, default='v6')
     parser.add_argument('--attn_activation', type=str, default='silu')
     parser.add_argument('--mask_ratio', type=float, default=0.25, help='Mask ratio for the autoencoder')
+    parser.add_argument('--dataset', type=str, default='pcqm4mv2', help='Dataset to use')
     parser.add_argument('--denoising_weight', type=float, default=0.1)
     parser.add_argument('--pos_mask', action='store_true', default=False)
     parser.add_argument('--lr_cosine_length', type=int, default=500000)
