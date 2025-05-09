@@ -818,7 +818,7 @@ class RelaTransEncoder(nn.Module):
         node_neigh = self.neigh_embedding(node, None) #[num_nodes,hidden_dim]
         node_input = self.node_embedding(node, None) #[num_nodes,hidden_dim]
 
-        distance = torch.sum((masked_position[edge_index[0]] - masked_position[edge_index[1]]) ** 2, dim=-1, keepdim=True)
+        distance = torch.sum((masked_position[edge_index[0]] - masked_position[edge_index[1]] + 1e-5) ** 2, dim=-1, keepdim=True)
         distance = torch.sqrt(distance) #[num_edges,1]
         
         edge_vec = (masked_position[edge_index[0]] - masked_position[edge_index[1]]) / distance
