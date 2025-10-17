@@ -1,6 +1,6 @@
 # [NeurIPS 2025] 3D-GSRD: 3D Molecular Graph Auto-Encoder with Selective Re-mask Decoding
 Authors: Chang Wu*, Zhiyuan Liu*, Wen Shu, Liang Wang, Yanchen Luo, Wenqiang Lei, Yatao Bian, Junfeng Fang†, Xiang Wang†
-* Equal contribution. † Corresponding author.
+\* Equal contribution. † Corresponding author.
 
 ## Requirements
 
