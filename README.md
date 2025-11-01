@@ -42,3 +42,14 @@ The `checkpoint_path` argument should be set to the path of the actual pretraine
 ```bash
 bash ft_md17.sh
 ```
+
+## Citation
+If you find **3D-GSRD** useful for your research, please kindly cite using this BibTeX:
+```latex
+@article{wu20253d,
+  title={3D-GSRD: 3D Molecular Graph Auto-Encoder with Selective Re-mask Decoding},
+  author={Wu, Chang and Liu, Zhiyuan and Shu, Wen and Wang, Liang and Luo, Yanchen and Lei, Wenqiang and Bian, Yatao and Fang, Junfeng and Wang, Xiang},
+  journal={arXiv preprint arXiv:2510.16780},
+  year={2025}
+}
+```
